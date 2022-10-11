@@ -1,0 +1,12 @@
+﻿  Matrix.cpp
+  Source.cpp
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Matrix.h(111,13): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Matrix.h(94): message : while compiling class template member function 'Matrix<int> Matrix<int>::multiply(Matrix<int>)'
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Source.cpp(63): message : see reference to function template instantiation 'Matrix<int> Matrix<int>::multiply(Matrix<int>)' being compiled
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Source.cpp(48): message : see reference to class template instantiation 'Matrix<int>' being compiled
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Matrix.h(39,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Source.cpp(48): message : see reference to function template instantiation 'Matrix<int>::Matrix<int>(std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>)' being compiled
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Source.cpp(48): message : see reference to function template instantiation 'Matrix<int>::Matrix<int>(std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>)' being compiled
+C:\Users\gener\source\repos\Holman_ex4.2\Holman_ex4.2\Matrix.h(40,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Holman_ex4.2.vcxproj -> C:\Users\gener\source\repos\Holman_ex4.2\x64\Debug\Holman_ex4.2.exe

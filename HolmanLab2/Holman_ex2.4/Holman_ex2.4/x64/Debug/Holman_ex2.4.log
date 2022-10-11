@@ -1,0 +1,3 @@
+﻿  altMoney.cpp
+C:\Users\gener\source\repos\Holman_ex2.4\Holman_ex2.4\altMoney.cpp(25,6): warning C4101: 'sum': unreferenced local variable
+  Holman_ex2.4.vcxproj -> C:\Users\gener\source\repos\Holman_ex2.4\x64\Debug\Holman_ex2.4.exe
