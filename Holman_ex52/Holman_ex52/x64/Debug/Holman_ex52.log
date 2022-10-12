@@ -1,5 +1,2 @@
 ﻿  LinkedNode.cpp
-  Source.cpp
-  Generating Code...
-LinkedNode.obj : error LNK2019: unresolved external symbol "public: class ListNode * __cdecl linkedList::getNode(int)" (?getNode@linkedList@@QEAAPEAVListNode@@H@Z) referenced in function "public: void __cdecl linkedList::insertAtMid(class ListNode * *,int)" (?insertAtMid@linkedList@@QEAAXPEAPEAVListNode@@H@Z)
-C:\Users\gener\source\repos\Holman_ex52\x64\Debug\Holman_ex52.exe : fatal error LNK1120: 1 unresolved externals
+  Holman_ex52.vcxproj -> C:\Users\gener\source\repos\Holman_ex52\x64\Debug\Holman_ex52.exe

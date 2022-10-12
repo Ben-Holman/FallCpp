@@ -30,8 +30,8 @@ public:
 	void traverse();
 	ListNode* find(int target);
 	ListNode* getNode(int data);
-	ListNode* findAndReplace(int target, int replacement); 
-	void findAndInsert(ListNode** head, int target);
+	void findAndReplace(ListNode* head,int target, int replacement); 
+	void findAndInsert(ListNode* prev, int target);
 	void findAndRemove(ListNode** head, int target);
 	void printList(ListNode* head);
 	void insertAtMid(ListNode** head_ref, int x);

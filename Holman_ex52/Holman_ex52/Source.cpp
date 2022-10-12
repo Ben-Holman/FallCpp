@@ -5,12 +5,19 @@ int main() {
 
 	linkedList* node = NULL; 
 	ListNode* node1;
+	//ListNode* node2; 
 	node->insertFront(&node1, 10); 
 	node->insertFront(&node1, 5);
 	node->insertFront(&node1, 6);
+	node->findAndInsert(node1, 7);
+	node->insertFront(&node1, 11);
+	//node->findAndRemove(&node1, 10);
+	node->findAndReplace(node1, 5, 12);
 	std::cout << "printing Linked List:\n"; 
 	node->printList(node1);
-	node->insertAtMid(&node1, 7);
+	//node->insertFront(&node1, 11);
+	node->printList(node1);
+	//node->insertAtMid(&node1, 7);
 	node->printList(node1);
 	//node->remove(node1, node1);
 	/*

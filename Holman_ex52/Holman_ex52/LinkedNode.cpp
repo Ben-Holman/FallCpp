@@ -43,21 +43,38 @@ ListNode* linkedList::find(int target) {
 	return NULL; 
 }
 
-ListNode* linkedList::findAndReplace(int target, int replacement) { // https://stackoverflow.com/questions/43566940/replace-node-in-linked-list
-	ListNode* tmp = head;
+void linkedList::findAndReplace(ListNode* head, int target, int replacement) { // https://stackoverflow.com/questions/43566940/replace-node-in-linked-list
+	//ListNode* tmp = head;
 
-	while (tmp != nullptr) {
-		if (tmp->data == target) {
-			tmp->data = replacement ; 
-			
+	while (head != NULL)
+	{
+		if (head->data == target)
+		{
+			head->data = replacement; //new is a keyword
+
 		}
-		return tmp->next;
+		head = head->next; //reposition this here
 	}
-	return NULL; 
+	//return NULL; 
 }
 
-void linkedList::findAndInsert(ListNode** head, int target) { //https://www.geeksforgeeks.org/cpp-program-for-inserting-a-node-in-a-linked-list/	
-	// 1. Allocate node
+void linkedList::findAndInsert(ListNode* prev, int target) { //https://www.geeksforgeeks.org/cpp-program-for-inserting-a-node-in-a-linked-list/	
+	// https://www.youtube.com/watch?v=RNMIDj62o_o
+	
+	if (prev == NULL) {
+		std::cout << "Previous cannot be NULL";
+		return;
+	}
+
+	ListNode* newNode = new ListNode();
+
+	newNode->data = target; 
+	newNode->next = prev->next; 
+	prev->next = newNode;
+										 
+															 
+/*
+															 // 1. Allocate node
 	ListNode* new_node = new ListNode();
 
 	// Used in step 5
@@ -65,14 +82,14 @@ void linkedList::findAndInsert(ListNode** head, int target) { //https://www.geek
 
 	// 2. Put in the data
 	new_node->data = target;
-
+	*/
 	/* 3. This new node is going to be
 		  the last node, so make next of
-		  it as NULL */
+		  it as NULL 
 	new_node->next = NULL;
-
+	
 	/* 4. If the Linked List is empty,
-	then make the new node as head */
+	then make the new node as head 
 	if (*head == NULL)
 	{
 		*head = new_node;
@@ -87,6 +104,7 @@ void linkedList::findAndInsert(ListNode** head, int target) { //https://www.geek
 	// 6. Change the next of last node
 	last->next = new_node;
 	return;
+	*/
 }
 
 void linkedList::findAndRemove(ListNode** head, int target) { // https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/
@@ -117,7 +135,7 @@ void linkedList::findAndRemove(ListNode** head, int target) { // https://www.gee
 	}
 }
 
-ListNode* getNode(int data){ // 
+ListNode* linkedList::getNode(int data){ // https://www.geeksforgeeks.org/cpp-program-for-inserting-node-in-the-middle-of-the-linked-list/
 	// allocating space
 	ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
 
