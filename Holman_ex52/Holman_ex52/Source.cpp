@@ -11,8 +11,10 @@ int main() {
 	node->insertFront(&node1, 6);
 	node->findAndInsert(node1, 7);
 	node->insertFront(&node1, 11);
-	//node->findAndRemove(&node1, 10);
-	node->findAndReplace(node1, 5, 12);
+	//node->printList(node1);
+	//std::cout << "Removing a node.\n";
+	node->findAndRemove(node1, 10);
+	//node->findAndReplace(node1,5);
 	std::cout << "printing Linked List:\n"; 
 	node->printList(node1);
 	//node->insertFront(&node1, 11);

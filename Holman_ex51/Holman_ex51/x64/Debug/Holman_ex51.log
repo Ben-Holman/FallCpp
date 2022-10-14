@@ -1,3 +1,4 @@
-﻿  Source.cpp
-C:\Users\gener\source\repos\Holman_ex51\Holman_ex51\Source.cpp(12): error C4700: uninitialized local variable 'node' used
-C:\Users\gener\source\repos\Holman_ex51\Holman_ex51\Source.cpp(16): error C4703: potentially uninitialized local pointer variable 'node1' used
+﻿  LinkedNode.cpp
+  Source.cpp
+  Generating Code...
+  Holman_ex51.vcxproj -> D:\2022-repos\FallCpp\Holman_ex51\x64\Debug\Holman_ex51.exe
